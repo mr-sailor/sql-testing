@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "data-approved-for-child-use"
+version = "0.1.0"
+description = ""
+authors = ["Filip Pastuszka <filippastuszkamf@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+faker = "^28.4.1"
+pyspark = "^3.5.2"
+black = "^24.8.0"
+jupyter = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
