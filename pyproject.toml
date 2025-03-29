@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "data-approved-for-child-use"
+name = "sql-testing"
 version = "0.1.0"
 description = ""
-authors = ["Filip Pastuszka <filippastuszkamf@gmail.com>"]
+authors = ["Filip Pastuszka <filip@cloudnativeconsulting.nl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
