@@ -1,0 +1,6 @@
+sqltesting:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "/tmp/my_dbt_duck_db" 

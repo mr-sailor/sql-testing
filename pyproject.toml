@@ -1,18 +1,26 @@
-[tool.poetry]
+[project]
 name = "sql-testing"
 version = "0.1.0"
 description = ""
-authors = ["Filip Pastuszka <filip@cloudnativeconsulting.nl>"]
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.12"
-faker = "^28.4.1"
-pyspark = "^3.5.2"
-black = "^24.8.0"
-jupyter = "^1.1.1"
+requires-python = ">=3.13"
+dependencies = [
+    "pyspark (==3.5.2)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "dbt (>=1.0.0.38.35,<2.0.0.0.0)",
+    "dbt-core (>=1.9.4,<2.0.0)",
+    "duckdb (>=1.2.1,<2.0.0)",
+    "dbt-duckdb (>=1.9.2,<2.0.0)",
+    "sqlglot (>=26.16.2,<27.0.0)",
+    "datacompy (>=0.16.6,<0.17.0)",
+    "grpcio (>=1.71.0,<2.0.0)",
+]
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"

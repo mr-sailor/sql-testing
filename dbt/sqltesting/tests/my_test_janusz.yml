@@ -1,0 +1,12 @@
+unit_tests:
+  - name: my_test_janusz
+    model: my_second_dbt_model
+    given:
+      - input: ref('my_first_dbt_model')
+        rows:
+          - {id: 0, email: "alice@example.com"}
+          - {id: 1, email: "alice@example.com"}
+    expect:
+      rows:
+          - {email: "alice@example.com"}
+          - {email: "alice@example.com"}

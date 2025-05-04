@@ -1,0 +1,13 @@
+unit_tests:
+  - name: my_test_test
+    model: my_first_dbt_model
+    given: # the mock data for your inputs
+      # - input: ref('cities_silver')
+      #   rows:
+      #     - {city: 'CITY1'}
+      - input: ref('upstream_table')
+        rows:
+          - {email: "alice@example.com"}
+    expect:
+      rows:
+          - {email: "alice@example.com"}
